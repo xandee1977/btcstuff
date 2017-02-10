@@ -72,10 +72,12 @@ $result = [
         'last' => $last_sell,
         'avg'  => $selavg,
     ],
+    'buy_at' => $buy_at,
+    'sell_at' => $sell_at,
     'suggestion' => $suggestion,
     'period' => $period,
 ];
 
 header('Content-Type: application/json');
 echo json_encode($result);
-?>s
+?>
