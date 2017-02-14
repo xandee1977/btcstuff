@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+   <head>
+      <title>Mercado Bitcoin Suggestion</title>
+      <script src="extension.js"></script>
+
+      <style type="text/css">
+          .tb-header {
+            color: #FFF;
+          }
+          
+          .buy-color {
+            background-color: #1f55ad;
+          }
+
+          .sell-color {
+            background-color: #3FBC6C;
+          }
+
+          .buy-color-text {
+            color: #1f55ad;
+          }
+
+          .sell-color-text {
+            color: #3FBC6C;
+          }
+
+          .highlight {
+            font-weight: bolder;
+            font-size: 11pt;
+          }
+
+          #mbtc-suggestion {
+            text-align: center;
+            font-size: 10pt;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 2px;
+            font-weight: bolder;
+          }
+      </style>
+   </head>
+   <body>
+      <div id="cnt-loader"> Loading... </div>
+
+      <div id="cnt-mbtc" style="display: none;">
+        <div id="mbtc-suggestion"></div>
+        <table>
+            <tbody>
+                <tr>
+                    <th colspan="4" class="tb-header buy-color">Compra</th>
+                </tr>
+                <tr>
+                    <th>MIN</th><td id="buy-min" class="highlight buy-color-text">-</td>
+                    <th>MAX</th><td id="buy-max">-</td>
+                </tr>                
+                <tr>
+                    <th>CURR</th><td id="buy-curr">-</td>
+                    <th>AVG</th><td id="buy-avg">-</td>
+                </tr>
+
+                <tr>
+                    <th colspan="4" class="tb-header sell-color">Venda</th>
+                </tr>
+                <tr>
+                    <th>MIN</th><td id="sell-min">-</td>
+                    <th>MAX</th><td id="sell-max" class="highlight sell-color-text">-</td>
+                </tr>                
+                <tr>
+                    <th>CURR</th><td id="sell-curr">-</td>
+                    <th>AVG</th><td id="sell-avg">-</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+   </body>
+</html>
