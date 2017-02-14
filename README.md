@@ -1,4 +1,4 @@
-Greate BTC Stuff
+Great BTC Stuff
 ============================
 Stuff to help you in your BTC Investment decisions.
 
