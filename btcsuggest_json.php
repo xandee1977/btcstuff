@@ -15,6 +15,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
     exit(0);
 }
 
+header('Content-Type: application/json');
+
 // Ticker
 $ticker_service = 'https://www.mercadobitcoin.net/api/ticker/';
 $ticker_json    = json_decode(file_get_contents($ticker_service));
@@ -33,9 +35,9 @@ $final_date   = strtotime("-0 days");
 
 // Trade service
 $trade_service = sprintf(
-	"https://www.mercadobitcoin.net/api/trades/%s/%s/",
-	$initial_date,
-	$final_date
+    "https://www.mercadobitcoin.net/api/trades/%s/%s/",
+    $initial_date,
+    $final_date
 );
 
 // Ask for server the trades
@@ -93,7 +95,5 @@ $result = [
     'suggestion' => $suggestion,
     'period' => $period,
 ];
-
-header('Content-Type: application/json');
 echo json_encode($result);
 ?>
