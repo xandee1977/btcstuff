@@ -1,4 +1,6 @@
 <?php
+header('Access-Control-Allow-Origin: *');
+
 // Ticker
 $ticker_service = 'https://www.mercadobitcoin.net/api/ticker/';
 $ticker_json    = json_decode(file_get_contents($ticker_service));
